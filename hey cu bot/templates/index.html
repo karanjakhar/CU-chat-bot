@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px Arial;  
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+  
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+.display1{
+  padding-top: 3%;
+  width:63%;
+  display: block;
+  margin : 0 auto;
+  
+}
+</style>
+</head>     
+<body>
+<div>
+  <img src="/static/chandigarh-university-seal.png" alt="logo" style="max-width:30% ;">
+</div>
+<div class="container" style="text-align: center; padding-top:5%;" >
+  <h2>Hey Chandigarh University</h2>
+
+  <p>Happy to help :)</p>
+
+  <!--Make sure the form has the autocomplete function switched off:-->
+
+
+  <form autocomplete="off" action="/qus" method="post">
+    <div class="autocomplete">
+      <input id="myInput" type="text" name="qus" placeholder="How may I help you?">
+    </div>
+    <input type="submit">
+  </form>
+  <form action="#" class="display1">
+    <div class="output" type="text" id="output">
+      <a>{{ rows }}</a>
+      
+    </div>
+  </form>
+</div>
+
+<script>
+function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+          b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  /*execute a function when someone clicks in the document:*/
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+/*An array containing all the country names in the world:*/
+var countries = ["what is the name of event in which you are participating",
+"who is the faculty coordinator of this event",
+"tell me the email id of registar",
+"who is the head of e governance cell",
+"tell me the contact no of head of e governance cell",
+"what is the roll of e governance cell",
+"In which block e governance cell is present",
+"what is the Room no of e governance cell",
+"who is the coordinator of be cse 2nd year",
+"who is the hod of block 1",
+"who is the batch coordinator of block 1",
+"tell me the email id of hod of block 1",
+"who is the executive director of chandigarh university",
+"who is the Chancellor of chandigarh university",
+"tell me the email id of Chancellor",
+"who is the vice Chancellor of chandigarh university",
+"tell me the email id of vice Chancellor of chandigarh university",
+"who is the Pro Vice Chancellor of chandigarh university",
+"tell me the email id of Pro Vice Chancellor of chandigarh university",
+"which block is called as cse block",
+"admission cell is present in which block",
+"where is the Chancellor's office",
+"where is the vice Chancellor's office",
+"Tell me the name of accociate director",
+"Department of Career Development (DCD) is present in which block",
+"who is the head of Department of Career Development (DCD)",
+"tell me the full form of fr",
+"tell me the full form of dcd",
+"IBM is present in which block",
+"where is the central library",
+"where is food republic (fR)",
+"what is the name of girl's hostel",
+"what is the name of boy's hostel",
+"who is the head of DSW (department of student welfare)",
+"DSW (department of student welfare) is present in which block",
+"tell me the email id of head of DSW (department of student welfare)",
+"Tell me the name of assistant director of DSW (department of student welfare)",
+"tell me the email id of assistant director of DSW (department of student welfare)",
+"tell me the email id of executive director of chandigarh university",
+"what is the official website of chandigarh university",
+"who is the accountant officer of account section",
+"account section is present in which block",
+"who is the chief librarian",
+"highest package offered in this year",
+"total placement offer in this year",
+"what are the reasons to join chandigarh university",
+"tell me the website name for admission",
+"how i can get 100% scholarship in your course fee",
+"what are the different programs for admission",
+"what are the different category of scholarship",
+"whats the current semester fee of BE CSE course the current fee is 80000 per sem","whats the current semester fee of B.E Aerospace Engineering",
+"whats the current semester fee of B.E Artificial Intelligence and Machine Learning",
+"whats the current semester fee of B.E Automobile Engineering",
+"whats the current semester fee of B.E Biotechnology",
+"whats the current semester fee of B.E Chemical Engineering",
+"whats the current semester fee of B.E Civil Engineering",
+"whats the current semester fee of B.E Computer Science and Engineering Big Data and Analytics Course IBM CU Collaboration",
+"whats the current semester fee of B.E Computer Science and Engineering Cloud Computing IBM CU Collaboration",
+"whats the current semester fee of B.E Computer Science and Engineering (Information Security IBM CU Collaboration)",
+"what is the scope of BE AEROSPACE",
+"what is the scope of BE CSE course",
+"what is the scope of B.E Automobile Engineering",
+"what is the scope of B.E Biotechnology",
+"what is the scope of B.E Chemical Engineering",
+"what is the scope of B.E Civil Engineering",
+"what is the scope of B.E Computer Science and Engineering (Big Data and Analytics Course IBM)",
+"what is the hostel helpline no of Girls Hostel",
+"what is the hostel helpline no of Boys Hostel",
+"what is the hostel fee for 4 seater",
+"what is the hostel fee for 3 seater non ac",
+"what is the hostel fee for 3 seater ac",
+"what is the hostel fee for 1 seater non ac",
+"what is the hostel fee for 1 seater ac",
+"what are the charges of food per month of hostel",
+"what are the total charges of food per year",
+"what are the different Facilities at Hostels",
+"is there any canteen in the university",
+"what are the timings of library",
+"what are the minimum charges for registration of of any course",
+"for hostel allotment where i have to go",
+"is there any wifi facility in the hostel",
+"is there any canteen facility in the college",
+"is there any scholarship for defence Personnel",
+"if i cancel my registration then how much refund i get",
+"what is the last month for the cancellation of registration for refund",
+"what is the amount of cancellation of registration",
+"is chandigarh university is approved by AICTE",
+"is chandigarh university is approved by UGC",
+"is chandigarh university is approved by University Grants Commission",
+"what is the average pack of placements",
+"what is the average package of cse",
+"what is the average package of civil engineering",
+"is chandigarh university is approved by All India Council for Technical Education",
+"is there any scholarship based on sports achievement",
+"is chandigarh university is Affiliated by AIU",
+"is chandigarh university is Affiliated by ACU",
+"is chandigarh university is Affiliated by IAU",
+"is chandigarh university is Affiliated by Association of Indian Universities",
+"is chandigarh university is Affiliated by Association of Commonwealth Universities",
+"is chandigarh university is Affiliated by International Association of Universities",
+"what are the Memberships and Affiliations of chandigarh university",
+"what is the campus Size",
+"what is The highest package offered to cse department",
+"what is The highest package offered to computer science department",
+"what is The highest package offered to computer science engineering",
+"is chandigarh university is approved by NAAC",
+"what is grade given by NAAC",
+"tell me about the placements of chandigarh university",
+"tell me about the Infrastructure of chandigarh university",
+"tell me about the Faculty",
+"how to  reach the chandigarh university from chandigarh Railway Station",
+"how to reach the chandigarh university from Bus Stand , Sector 43 , Chandigarh",
+"how to  reach the chandigarh university from Airport Chandigarh",
+"how to  reach the chandigarh university from Bus Stand , Sector 17",
+"Is Orientation mandatory",
+"How do I register for Orientation",
+"Can I change my session date or other details as per my reservation",
+"Who will address at the Orientation Programme",
+"When can first year students move into the hostels",
+"Should parents make it a point to attend the Parent Family Orientation sessions",
+"What activities can I pursue at CU",
+"Can I get accommodation for my parent in hostel in orientation",
+"Where do I send my high school college transcripts",
+"Where do I send scholarship checks",
+"Does CU have shuttle service from the airport , railway station or bus stand",
+"Where can I do my laundry",
+"Who runs the building I'll be living in",
+"How do I get my belongings to my hostel room",
+"How can I set up a bank account",
+"How can I get Fee Statement",
+"How can I pay my pending fees",
+"How can I get my student UID and ID card",
+"What happens if I lose my card",
+"From where can I get my Time Table",
+"From where can I get my Syllabus Course Curriculum",
+"How do you find the locations of your classes",
+"When do classes start",
+"When will I receive course registration materials",
+"When can I register for classes",
+"From where do I get my Internet user password",
+"how many departments are there in chandigarh university",
+"Where can I find more help",
+"How do I get involved in clubs and organizations"];
+
+/*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+autocomplete(document.getElementById("myInput"), countries);
+</script>
+
+
+</body>
+</html>

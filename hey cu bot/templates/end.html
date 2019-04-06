@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 16px Arial;  
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+
+}
+
+input {
+  border: 1px solid transparent;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  background-color: #f1f1f1;
+  width: 100%;
+}
+
+input[type=submit] {
+  background-color: DodgerBlue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff; 
+  border-bottom: 1px solid #d4d4d4; 
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9; 
+  
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+.display1{
+  padding-top: 3%;
+  width:63%;
+  display: block;
+  margin : 0 auto;
+  
+}
+</style>
+</head>     
+<body>
+<div>
+  <img src="/static/chandigarh-university-seal.png" alt="logo" style="max-width:30% ;">
+</div>
+<div class="container" style="text-align: center; padding-top:5%;" >
+  <h2>Hey Chandigarh University</h2>
+
+  <p>Happy to help :)</p>
+
+  <!--Make sure the form has the autocomplete function switched off:-->
+
+
+
+  <form action = '/'>
+    <h3>It was pleasure talking to you. <br> Looking forward to be in touch with you :)</h3>
+    <div>
+            <label for="phonumber">Name:</label>
+            <input type="text" name="phnumber" id="phnumber" style="width:50%;padding-top:1%; " maxlength="15">
+    </div>
+    <br>
+    <div>
+            <label for="email">Email:</label>
+            <input type="email" name="useremail" id="useremail" style="width:50%;">
+    </div>
+    <br>
+    <div >
+        <button  style="background-color: #008CBA;color: white;  font-size: 16px; margin: 4px 2px; cursor: pointer;"> SUBMIT</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>

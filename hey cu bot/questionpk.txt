@@ -1,0 +1,144 @@
+what is the name of event in which you are participating-ok sure , tech event hey chandigarh university
+who is the faculty coordinator of this event-er. amardeep singh and er. baljeet kaur nagra
+tell me the email id of registar-ok sure email id of registar is registar@cumail.in
+who is the head of e governance cell-ms.Shefali verma is the head of e governance cell
+tell me the contact no of head of e governance cell-contact no is 8146651620
+what is the roll of e governance cell-ok sure the roll of e governance cell is to deal with the academic affair
+In which block e governance cell is present-e governance cell is present in block 1
+what is the Room no of e governance cell-213
+who is the coordinator of be cse 2nd year-er. gurpreet singh is the coordinator of be cse 2nd year
+who is the hod of block 1-dr vinay goyal
+who is the batch coordinator of block 1-dr. sandeep singh kang
+tell me the email id of hod of block 1-email id of hod is hod.cse@cumail.in
+who is the executive director of chandigarh university-dr. satbir singh sehgal
+who is the Chancellor of chandigarh university-Satnam Singh Sandhu is the Chancellor of chandigarh university
+tell me the email id of Chancellor-Chancellor@cumail.in
+who is the vice Chancellor of chandigarh university-dr. R. S. Bawa is the vice Chancellor of chandigarh university
+tell me the email id of vice Chancellor of chandigarh university-vc@cumail.in
+who is the Pro Vice Chancellor of chandigarh university-dr. b. s. sohi is the pro Vice Chancellor of chandigarh university
+tell me the email id of Pro Vice Chancellor of chandigarh university-provc@cumail.in
+which block is called as cse block-block 1 is called as cse block
+admission cell is present in which block-admission cell is present in block 9 
+where is the Chancellor's office-ok sure , Chancellor's office is in block 9 , ground floor.
+where is the vice Chancellor's office-ok sure , vice Chancellor's office is in block 9
+Tell me the name of accociate director-dr. ruchi singla
+Department of Career Development (DCD) is present in which block-Department of Career Development (DCD) is present in block 6
+who is the head of Department of Career Development (DCD)-dr. pardeep bansal is the head of Department of Career Development (DCD)  
+tell me the full form of fr-food republic
+tell me the full form of dcd-Department of Career Development
+IBM is present in which block-ibm is present in south block
+where is the central library-central library is present in block 1 in the basement
+where is food republic (fR)-food repbulic is in block 6
+what is the name of girl's hostel-tagore and sukhna
+what is the name of boy's hostel-neck chand towers and zakir
+who is the head of DSW (department of student welfare)-dr. arvinder singh kang
+DSW (department of student welfare) is present in which block-DSW (department of student welfare) is present in block 3
+tell me the email id of head of DSW (department of student welfare)-dean.sw@cumail.in
+Tell me the name of assistant director of DSW (department of student welfare)-mr. manish jhangra
+tell me the email id of assistant director of DSW (department of student welfare)-culturalcoordinator@cumail.in
+tell me the email id of executive director of chandigarh university-ed@cumail.in
+what is the official website of chandigarh university-the official website of chandigarh university is http://www.cuchd.in/
+who is the accountant officer of account section-mr. mehak sood is the accontant officer
+account section is present in which block-in block 3 account section is present
+who is the chief librarian-dr. m. s. pathania
+highest package offered in this year-31.77 lacs per anum
+total placement offer in this year-more than 6314 placement are offered
+what are the reasons to join chandigarh university-Quality Placements ,A Global University with Big Ideas,Located in the Vicinity of Chandigarh
+tell me the website name for admission-wwww.fasttrack.cuchd.in is the website name for online admission
+how i can get 100% scholarship in your course fee-you can get 100% scholarship by giving the CUSAT exam
+what are the different programs for admission-UNDER GRADUATE PROGRAMS,POST GRADUATE PROGRAMS,SPECIALIZED PROGRAMS
+what are the different category of scholarship-ok sure there are total 6 category of scholarship, Scholarship Cum Admission Test (CU-SAT) ,Merit Scholarship Schemes,Other Concessions for the Academic Year 2019 ,Scholarship Scheme for Wards of Defence Personnel, Scholarship for Family Members of Chandigarh University Staff
+whats the current semester fee of BE CSE course the current fee is 80000 per sem
+whats the current semester fee of B.E Aerospace Engineering-the current fee is 85000 per sem
+whats the current semester fee of B.E Artificial Intelligence and Machine Learning-the current fee is 80000 per sem
+whats the current semester fee of B.E Automobile Engineering-the current fee is 80000 per sem
+whats the current semester fee of B.E Biotechnology-the current fee is 80000 per sem
+whats the current semester fee of B.E Chemical Engineering-the current fee is 80000 per sem
+whats the current semester fee of B.E Civil Engineering-the current fee is 80000 per sem
+whats the current semester fee of B.E Computer Science and Engineering Big Data and Analytics Course IBM CU Collaboration-the current fee is 95000 per sem
+whats the current semester fee of B.E Computer Science and Engineering Cloud Computing IBM CU Collaboration-the current fee is 95000 per sem
+whats the current semester fee of B.E Computer Science and Engineering (Information Security IBM CU Collaboration)-the current fee is 95000 per sem
+what is the scope of BE AEROSPACE-employment for aerospace engineers is projected to grow at a rate of 5 percent, Also, India aims to become the third-largest aviation market by 2026
+what is the scope of BE CSE course-According to US Bureau of Labor Statistics, employment for computer engineers is projected to grow 17 percent from 2014 to 2024.
+what is the scope of B.E Automobile Engineering-According to US Bureau of Labor Statistics, employment of automobile engineers is projected to grow 5 percent from 2014 to 2024
+what is the scope of B.E Biotechnology-you can get employed as a Research Scientist, Biotechnologist, Quality Control Officer
+what is the scope of B.E Chemical Engineering-According to US Bureau of Labor Statistics, employment of chemical engineers is projected to grow 2 percent from 2014 to 2024
+what is the scope of B.E Civil Engineering-According to US Bureau of Labor Statistics, employment of civil engineers is projected to grow 8 percent from 2014 to 2024
+what is the scope of B.E Computer Science and Engineering (Big Data and Analytics Course IBM)-Currently every major IT company like , Facebook , Jabong , Snapdeal , Amazon etc.., are using Hadoop to convert zettabytes of data created through these portals hence if you are trained in Hadoop you will be the apple of any developer in India
+what is the hostel helpline no of Girls Hostel-Girls Hostel : 8146651563, 7087118102
+what is the hostel helpline no of Boys Hostel-Boys Hostel : 7087456666 , 8146278666
+what is the hostel fee for 4 seater-Rs. 86000 per year
+what is the hostel fee for 3 seater non ac-Rs. 96000 per year
+what is the hostel fee for 3 seater ac-Rs. 10800 per year
+what is the hostel fee for 1 seater non ac-Rs. 120000 per year
+what is the hostel fee for 1 seater ac-Rs. 150000 per year
+what are the charges of food per month of hostel-Rs. 2700 per month
+what are the total charges of food per year-Rs. 32400 per year
+what are the different Facilities at Hostels-24 x 7 Power Supply , Wi-Fi Internet Services , Well-furnished common rooms , Gymnasium , Well- equipped reading rooms , Night Canteen & Tuck Shops , Saloon , Gym Services , Visitors & Guest Room 
+is there any canteen in the university-there are many canteens in the university like food republic , food lover , creative , buddies, lords , books and cooks 
+what are the timings of library-the timings of library is 09:30 AM to 20:00 PM in the week days and in weekends the timing is 09:30 am to 16:30 pm
+what are the minimum charges for registration of of any course-Rs. 10000 for booking a seat in any course
+for hostel allotment where i have to go-DSW department of student welfare
+is there any wifi facility in the hostel-yes there is wifi facility in the hostel
+is there any canteen facility in the college-yes there are many canteens in the college campus
+is there any scholarship for defence Personnel-yes there is scholarship for defence Personnel
+if i cancel my registration then how much refund i get-you will get 8000 out of 10000
+what is the last month for the cancellation of registration for refund-before 27th august
+what is the amount of cancellation of registration-the amount of cancelletion is RS. 2000
+is chandigarh university is approved by AICTE-yes chandigarh university is approved by AICTE
+is chandigarh university is approved by UGC-yes chandigarh university is approved by ugc
+is chandigarh university is approved by University Grants Commission-yes chandigarh university is approved by University Grants Commission
+what is the average pack of placements-the average package is between 4 to 5 lacs per year
+what is the average package of cse-the average package of cse is between 5 to 6 lacs per anum
+what is the average package of civil engineering-the average package of civil engineering is 4.5 lacs per year
+is chandigarh university is approved by All India Council for Technical Education-yes chandigarh university is approved by All India Council for Technical Education
+is there any scholarship based on sports achievement-yes there is a scholarship based on sports
+is chandigarh university is Affiliated by AIU-yes it is Affiliated by AIU
+is chandigarh university is Affiliated by ACU-yes it is Affiliated by ACU
+is chandigarh university is Affiliated by IAU-yes it is Affiliated by IAU
+is chandigarh university is Affiliated by Association of Indian Universities-yes it is Affiliated by Association of Indian Universities
+is chandigarh university is Affiliated by Association of Commonwealth Universities-yes it is Affiliated by Association of Commonwealth Universities
+is chandigarh university is Affiliated by International Association of Universities-yes it is Affiliated by International Association of Universities
+what are the Memberships and Affiliations of chandigarh university-Association of Indian Universities , Association of Commonwealth Universities , International Association of Universities 
+what is the campus Size-the campus size is 200 Acres
+what is The highest package offered to cse department-The highest package offered this year was 31.7 lacs per annum in computer science
+what is The highest package offered to computer science department-The highest package offered this year was 31.7 lacs per annum in computer science
+what is The highest package offered to computer science engineering-The highest package offered this year was 31.7 lacs per annum in computer science
+is chandigarh university is approved by NAAC-yes chandigarh university is approved by NAAC 
+what is grade given by NAAC-chandigarh university has received an  A grade NAAC accreditation certificate. 
+tell me about the placements of chandigarh university-The placements are up to the mark at Chandigarh University , Many placement drives are organised by the university to get more jobs for their students
+tell me about the Infrastructure of chandigarh university-The campus has student friendly classrooms with good seating arrangements , and there are good facilities around the campus , There are around 14 blocks currently operational and many more being built
+tell me about the Faculty-The course curriculum is up to the mark ,  Here, all the courses have been divided equally into semesters , and a semester consists of 3 parts of the curriculum , The faculty members are up to the mark
+how to  reach the chandigarh university from chandigarh Railway Station-Board BUS Number  20 Till Kharar Bus stand , Take Auto from Kharar Bus Stand to Chandigarh University
+how to reach the chandigarh university from Bus Stand , Sector 43 , Chandigarh-Board BUS Number 20 Till Kharar Bus stand , Take Auto from Kharar Bus Stand to Chandigarh University
+how to  reach the chandigarh university from Airport Chandigarh-Airport Chandigarh , ISBT , Sector 43 , Kharar Bus Stand , chandigarh university
+how to  reach the chandigarh university from Bus Stand , Sector 17-Board BUS Number 20 Till Kharar Bus stand Take Auto from Kharar Bus Stand to Chandigarh University
+Is Orientation mandatory-Yes , it is highly recommended for the students to attend the orientation as it will provide them with information about various rules, regulations and policies of the university
+How do I register for Orientation-There is no separate registration for the orientation , The students will get themselves registered in the departments on first day according to their schedule , The schedule can be checked on the UIMS or on the university website
+Can I change my session date or other details as per my reservation-There is no separate registration for the orientation , The students will get themselves registered in the departments on first day according to their schedule , The schedule can be checked on the UIMS or on the university website
+Who will address at the Orientation Programme-Honorable Chancellor , Vice Chancellor and other Senior functionarie
+When can first year students move into the hostels-The students are suggested to move in the hostel at least one day in advance as per their orientation schedule
+Should parents make it a point to attend the Parent Family Orientation sessions-It will be better if parents of the students also attend the Orientation sessions
+What activities can I pursue at CU-The university offers many Cultural Committees and several Technical Clubs at both university and department level in which he she can get enrolled as per his her interest
+Can I get accommodation for my parent in hostel in orientation-Yes , the accommodation for parents is available in the hostel , The preferred stay is generally for one day
+Where do I send my high school college transcripts-REGISTRAR ,  All the documents mentioned in the checklist should be submitted to Mr. Bhupinder Singh , Office Superintendent , Registration Branch , Block No. 4 , Room No. 102 General Category and to Ms. Radha Sharma, Block No. 1 , Room no. 204 SC ST category
+Where do I send scholarship checks-All queries w. r. t. CU scholarships and Govt. aided scholarships will be entertained in the Scholarship Branch, Room No. 204, Academic Block 1 . Ph. 0160-3014412 , 0160-3014403 Email: ar.radhasharma@cumail.in
+Does CU have shuttle service from the airport , railway station or bus stand-Yes, we will run the shuttle service from CU to airport , railway station and Chandigarh bus stand during the admission period subject to the prior information of arrival in small batches , The help line numbers for availing the facility are 8146651560
+Where can I do my laundry-The hostel provides the facility of laundry to students
+Who runs the building I'll be living in-The hostel has three important levels that are Wardens , Chief Hostel Warden and General Manager
+How do I get my belongings to my hostel room-Once you reach the university campus , university will provide manpower to the students in order to help them shift their belongings
+How can I set up a bank account-There is a branch of SBI in the university campus near the main gate of the university and bank account can be opened
+How can I get Fee Statement-It can be Downloaded seen in UIMS Accounts
+How can I pay my pending fees-Fees can be paid Online , NEFT , Debit Card , Credit Card , Net Banking
+How can I get my student UID and ID card-The UID and ID cards will be issued by the HODs of the respective departments
+What happens if I lose my card-The student can apply for duplicate card from the student care centre after due payment
+From where can I get my Time Table-It can be downloaded from the UIMS
+From where can I get my Syllabus Course Curriculum-it can be downloaded from the UIMS
+How do you find the locations of your classes-The university will set up student help desk at the entrance of the campus The students will also be provided with complete minute to minute schedule for one day
+When do classes start-For the new academic sessions , the students are suggested to consult the Orientation Schedule available on UIMS and/or the university website , The classes will start at 9:30 am sharp
+When will I receive course registration materials-On the day of Registration  reporting
+When can I register for classes-The students have to attend and register for the classes on the day of reporting as their attendance will be counted from the first day itself
+From where do I get my Internet user password-Firstly Student UID will be the Username & Password for internet access
+how many departments are there in chandigarh university-total no departments are 20 approx
+Where can I find more help-The Student Care Centers are provided in each Academic Block  The student can approach there or send their problems online  They can also visit the Department of Student Welfare 
+How do I get involved in clubs and organizations-There are many clubs and committees at both university and department level, The student can become the member according to his her interest 
