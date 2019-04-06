@@ -1,0 +1,4 @@
+sklearn   
+nltk    
+sqlite3   
+numpy    
